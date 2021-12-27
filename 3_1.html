@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv=Content-Type Content="text/html charset=utf-8">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript">
+        var birth;
+        var age;
+        var ok=true;
+
+        birth=prompt("태어난 연도(YYYY)?");
+        if(birth%4==0){
+            if(birth%100==0){
+                if(birth%400==0){
+                    ok=true;
+                }else{
+                    ok=false;
+                }
+            }else{
+                ok=true;
+            }
+        }else{
+            ok=false;
+        }
+
+        if(ok==true){
+            document.write("윤년입니다.");
+        }else{
+            document.write("윤년이 아닙니다.");
+        }
+
+    </script>
+</body>
+</html>
